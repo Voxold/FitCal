@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitCal</title>
     <link rel="stylesheet" href="/dist/output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <!-------------- Header ------------------>
@@ -17,8 +18,8 @@
             <a href="#" class="no-underline hover:text-red-500 ">Contact</a>
         </nav>
         <button id="download" type="button" class="border-solid bg-red-500 
-        rounded-sm px-7 py-3 hover:bg-transparent hover:border-2 hover:border-red-500
-        hover:text-red-500">Download</button>
+        rounded-lg px-7 py-2 hover:bg-transparent hover:border-2 hover:border-red-500
+        hover:text-red-500 font-medium">Download</button>
     </header>
 
     <!-------------- Container ------------------>
@@ -82,23 +83,27 @@
         <img src="/img/logo.png" alt="logo" class="w-1/4 h-auto " >
         <!-- Nav 1-->
         <div class="bg-blue-500 flex flex-col w-1/5 justify-center items-center">
-          <nav class="flex flex-col justify-between h-1/2">
-            <a href="#" class="bg-red-200">Home</a>
-            <a href="#" class="bg-red-200">About</a>
-            <a href="#" class="bg-red-200">Guide</a>
-            <a href="#" class="bg-red-200">Contact</a>
+          <nav class="flex flex-col justify-between h-1/2">Menu
+            <span><i class='bx bx-chevron-right text-red-500'></i><a href="#" class="hover:text-red-500">Home</a></span>
+            <span><i class='bx bx-chevron-right text-red-500'></i><a href="#" class="hover:text-red-500">About</a></span>
+            <span><i class='bx bx-chevron-right text-red-500'></i><a href="#" class="hover:text-red-500">Guide</a></span>
+            <span><i class='bx bx-chevron-right text-red-500'></i><a href="#" class="hover:text-red-500">Contact</a></span>
           </nav>
         </div>
         <!-- Nav 2-->
-        <nav>Policies
-            <a href="#">Privacy Policy</a>
-            <a href="#">Cookie Policy </a>
-            <a href="#">Terms of Use </a>
+        <div class="bg-blue-500 flex flex-col w-1/5 justify-center items-center">
+          <nav class="flex flex-col justify-between h-1/2"><span class="font-">Policies</span>
+            <span><i class='bx bx-chevron-right text-red-500'></i><a href="#" class="hover:text-red-500">Privacy Policy</a></span>
+            <span><i class='bx bx-chevron-right text-red-500'></i><a href="#" class="hover:text-red-500">Cookie Policy </a></span>
+            <span><i class='bx bx-chevron-right text-red-500'></i><a href="#" class="hover:text-red-500">Terms of Use </a></span>
         </nav>
+        </div>
+
+        
         <!-- Nav 3-->
         <nav class="w-1/4">Download
-            <img src="/img/app-store.png" alt="app-store" class="w-5 " />
-            <img src="/img/google-play.webp" alt="google-play" class="w-5 " />
+            <img src="/img/app-store.png" alt="app-store" class="w-1/2 cursor-pointer" />
+            <img src="/img/google-play.webp" alt="google-play" class="w-2/12 cursor-pointer" />
         </nav>
     </footer>
 
